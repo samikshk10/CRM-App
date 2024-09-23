@@ -1,0 +1,60 @@
+{
+  "name": "service-providers",
+  "version": "1.0.0",
+  "description": "service-providers with @apollo/server",
+  "main": "src/server.ts",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "build:watch": "tsc --watch",
+    "start:watch": "nodemon dist/server.js",
+    "start:dev": "nodemon --exec ts-node --type-check src/server.ts",
+    "clean": "rm -rf ./dist"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.9.3",
+    "@apollo/subgraph": "^2.5.4",
+    "@aws-sdk/client-cognito-identity-provider": "^3.409.0",
+    "amazon-cognito-identity-js": "^6.3.5",
+    "aws-jwt-verify": "^4.0.0",
+    "axios": "^1.6.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "graphql": "^16.8.0",
+    "graphql-redis-subscriptions": "^2.6.0",
+    "graphql-tag": "^2.12.6",
+    "ioredis": "^5.3.2",
+    "joi": "^17.10.0",
+    "loglevel": "^1.8.1",
+    "module-alias": "^2.2.3",
+    "passport": "^0.6.0",
+    "passport-facebook": "^3.0.0",
+    "pg": "^8.11.3",
+    "sequelize": "^6.32.1",
+    "sequelize-cli": "^6.6.1",
+    "slug": "^8.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.17",
+    "@babel/register": "^7.22.15",
+    "@joi/date": "^2.1.0",
+    "@types/cors": "^2.8.13",
+    "@types/express-session": "^1.17.10",
+    "@types/module-alias": "^2.0.2",
+    "@types/passport": "^1.0.15",
+    "@types/passport-facebook": "^3.0.3",
+    "@types/sequelize": "^4.28.15",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "_moduleAliases": {
+    "@src": "dist"
+  }
+}

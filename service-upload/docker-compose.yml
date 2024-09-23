@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  serice-upload:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.env.docker:/usr/src/app/.env'
+    image: serice-upload
+    env_file:
+      - .env.docker
+    ports:
+      - "8002:8002"

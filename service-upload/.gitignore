@@ -1,0 +1,12 @@
+dist
+node_modules
+.env
+.env.docker
+logs
+.yarnrc.yml
+.yarn
+*lock.json
+.vscode
+*.pem
+.idea
+public

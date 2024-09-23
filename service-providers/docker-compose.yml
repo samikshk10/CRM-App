@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  service-providers:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.env.docker:/usr/src/app/.env'
+    image: service-providers
+    env_file:
+      - .env.docker
+    ports:
+      - "8001:8001"
